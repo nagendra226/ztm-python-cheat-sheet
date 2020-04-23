@@ -33,6 +33,8 @@ type(4E2) #float - 4*10 to the power of 2
 10 / 3  # 3.3333333333333335
 10 // 3 # 3 --> floor division - no decimals and returns an int
 10 % 3  # 1 --> modulo operator - return the reminder. Good for deciding if number is even or odd
+-5 // 2 # -3 --> floor division (It gives -3 because of -2.5 is done to floor of 3)
+-4 // 2 # 2 -->  floor division - no decimals and returns an int
 ```
 
 ```python
@@ -97,6 +99,7 @@ len('turtle') # 6
 'ok, I am done.'.capitalize()         # 'Ok, I am done.'
 'oh hi there'.find('i')               # 4 --> returns the starting index position of the first occurence
 'oh hi there'.count('e')              # 2
+'hello'.count('')                     # 6 --> if null value is provided it gives length of the string plus 1 (5+1)
 
 ```
 
@@ -326,6 +329,7 @@ set6 = set1.symmetric_difference(set2)# {1, 2, 4, 5}
 set1.issubset(set2)                   # False
 set1.issuperset(set2)                 # False
 set1.isdisjoint(set2)                 # False --> return True if two sets have a null intersection.
+set8 = {1.0,1}                        # gives {1} set treats as 1.0 and 1 different
 
 ```
 
